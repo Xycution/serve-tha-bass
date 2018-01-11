@@ -25,13 +25,64 @@ import list_item
 
 
 bass = work()
-action = list()
+# action = list()
 
 class select():
     def view(self.initial):
         if self.initial == 'anime'
         print action.anime
 
+def select():
+    """
+    Brief:
+        -
+
+    Description:
+        -
+
+    Arguments:
+        -
+
+    Return Value(s):
+        -
+
+    Example:
+        -
+
+    Author(s):
+        -
+    """
+
+    print """\n
+      -----------       --------      -----------------      ------------
+    -- 1. View   --  -- 2. Add  --  --  3. Change State  --  --  4. Delete  --
+      -----------       --------      -----------------      ------------
+    """
+    action = raw_input('Please select an action')
+
+    if action == 1:
+        view()
+
+def view(list_item):
+    """
+    Brief:
+        -
+
+    Description:
+        -
+
+    Arguments:
+        -
+
+    Return Value(s):
+        -
+
+    Example:
+        -
+
+    Author(s):
+        -
+    """
 
 
 def add(list_item):

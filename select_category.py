@@ -37,7 +37,7 @@ vidgames = [ 1: 'Pokemon', 2: 'XCOM', 3: 'Conflict: Global Terror']
 manga = [ 1: 'Attack on Titan', 2: 'One Piece', 3: 'My Hero Academia']
 
 
-def select_category():
+def select():
     """
     Brief:
         -
