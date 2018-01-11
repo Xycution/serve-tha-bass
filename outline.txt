@@ -16,3 +16,16 @@ manga
 
 backlog | in progress | complete
 
+
+
+
+--------------------------------
+
+
+
+
+select category
+anime | video games | manga
+
+select action
+view | add | change state | delete
