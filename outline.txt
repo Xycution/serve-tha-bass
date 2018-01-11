@@ -29,3 +29,13 @@ anime | video games | manga
 
 select action
 view | add | change state | delete
+
+---------------------------------
+
+
+class list_item(object):
+      user_input
+      name
+      state
+      genre
+      tag
