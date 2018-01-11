@@ -1,0 +1,10 @@
+#main method file
+
+print """\n
+Please select a category.\n
+   -----------         -----------------         ------------
+-- 1. Anime   --     -- 2. Video Games  --     --  3. Manga  --\n
+   -----------         -----------------         ------------
+
+
+"""

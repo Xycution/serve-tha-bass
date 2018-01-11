@@ -1,8 +1,9 @@
 #import serve-tha-bass
 #import select-action
 
-Class list_item(object):
+class list_item(object):
     def view(category):
+        if 
         
     
 
