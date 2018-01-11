@@ -1,13 +1,57 @@
+"""
+Brief:
+    -
 
-class list:
-# anime list
-anime = [1: 'Code Geass', 2: 'World Trigger', 3: 'One Piece']
+Description:
+    -
+
+Arguments:
+    -
+
+Return Value(s):
+    -
+
+Example:
+    -
+
+Author(s):
+    -
+"""
+
+import serve-tha-bass
+import select-category
 
 
-# video games list
-vidgames = [ 1: 'Pokemon', 2: 'XCOM', 3: 'Conflict: Global Terror']
+bass = work()
+action = list()
+
+class select():
+    def view(self.initial):
+        if self.initial == 'anime'
+        print action.anime
 
 
-# manga list
-manga = [ 1: 'Attack on Titan', 2: 'One Piece', 3: 'My Hero Academia']
 
+def add(list_item):
+    """
+    Brief:
+        -
+
+    Description:
+        -
+
+    Arguments:
+        -
+
+    Return Value(s):
+        -
+
+    Example:
+        -
+
+    Author(s):
+        -
+    """
+# def change_state(list_item, category, current_state, new_state)
+
+# def delete(list_item)

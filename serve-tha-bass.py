@@ -1,6 +1,26 @@
+"""
+Brief:
+    -
+
+Description:
+    -
+
+Arguments:
+    -
+
+Return Value(s):
+    -
+
+Example:
+    -
+
+Author(s):
+    -
+"""
+
 #!/usr/bin/env python
-#import select-action
-#import select-category as something
+import select-action
+import select-category
 
 action = list()
 choice = something.select() ## << This isn't being recognized when running for some reason
@@ -14,7 +34,7 @@ class work(object):
           -----------          -----------------         ------------
 
         """
-        select =  raw_input('Please select a category:\n ')
+        select =  raw_input('Please select a category:\n ').lower()
 
         if select == 1 or 'anime' or 'Anime':
             self.initial = 'anime'
@@ -26,7 +46,7 @@ class work(object):
             print "Please input a valid selection"
 
     def choose(self):
-        
+
         print """\n
           -----------          -----------------         ------------
         -- 1. view   --     -- 2. Video Games  --     --  3. Manga  --
@@ -44,6 +64,40 @@ class work(object):
 
 workin = work()
 
-    
+
 workin.startup()
-workin.choose()    
+workin.choose()
+
+def main():
+    """
+    Brief:
+        -
+
+    Description:
+        -
+
+    Arguments:
+        -
+
+    Return Value(s):
+        -
+
+    Example:
+        -
+
+    Author(s):
+        -
+    """
+    # launch application -- startup()
+
+    # ask user what they want to do
+
+    # execute actions
+
+    # ask user what they want to do
+
+    # end
+    pass
+
+
+if  __name__ =='__main__':main()
