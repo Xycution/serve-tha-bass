@@ -24,9 +24,6 @@ import select_category
 import list_item
 
 
-action = list()
-choice = something.select() ## << This isn't being recognized when running for some reason
-
 def startup(self): # this is the first thing to show when running
     """
     Brief:
