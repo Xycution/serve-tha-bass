@@ -19,17 +19,10 @@ Author(s):
     Mekyle Fernandes, Mykayla Fernandes
 """
 
-<<<<<<< HEAD:serve_tha_bass.py
-#!/usr/bin/env python
 import select_action
 import select_category
 import list_item
-=======
 
-import select-action
-import select-category
-import list-item
->>>>>>> d8ed06d9e526f34190cd48ae0048707d360af1bd:serve-tha-bass.py
 
 action = list()
 choice = something.select() ## << This isn't being recognized when running for some reason
