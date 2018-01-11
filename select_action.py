@@ -54,11 +54,11 @@ def select():
     """
 
     print """\n
-      -----------       --------      -----------------        ------------       ----------   
+      -----------       --------      -----------------        ------------       ----------
     -- 1. View   --  -- 2. Add  --  --  3. Change State  --  --  4. Delete  --  --  5. Quit  --
       -----------       --------      -----------------        ------------       ----------
     """
-    action = raw_input('Please select an action')
+    action = raw_input('Please select an action number')
 
     if action == 1:
         view()
