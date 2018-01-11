@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Brief:
     serve-tha-bass.py - Contains the primary flow of the application execution.
@@ -18,7 +19,7 @@ Author(s):
     Mekyle Fernandes, Mykayla Fernandes
 """
 
-#!/usr/bin/env python
+
 import select-action
 import select-category
 import list-item
