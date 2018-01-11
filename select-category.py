@@ -1,11 +1,12 @@
 """
 Brief:
-    -
+    select-category.py - Contains the class definitions for all the categories
+        and the functions needed to manipulate them.
 
 Description:
     -
 
-Arguments:
+Methods:
     -
 
 Return Value(s):

@@ -1,21 +1,21 @@
 """
 Brief:
-    -
+    serve-tha-bass.py - Contains the primary flow of the application execution.
 
 Description:
-    -
+    A command line application to help track video games, anime, and manga
 
-Arguments:
-    -
+Methods:
+    main()
 
 Return Value(s):
-    -
+    True on Success, False on Failure
 
 Example:
-    -
+    >python serve-tha-base.py --> application launches
 
 Author(s):
-    -
+    Mekyle Fernandes, Mykayla Fernandes
 """
 
 #!/usr/bin/env python

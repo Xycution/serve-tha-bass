@@ -1,9 +1,9 @@
 """
 Brief:
-    -
+    list-item.py - Contains the class definition for listItem
 
 Description:
-    -
+    list item object and its properties
 
 Methods:
     -
@@ -15,7 +15,7 @@ Example:
     -
 
 Author(s):
-    -
+    Mykayla Fernandes
 """
 
 import serve-tha-bass
@@ -43,7 +43,30 @@ class listItem:
     Author(s):
         -
     """
+
+    tags = []  # list of tags associated with list item
+
+
     def __init__(self, name, category, state, genre, tag):
+        """
+        Brief:
+            -
+
+        Description:
+            -
+
+        Arguments:
+            -
+
+        Return Value(s):
+            -
+
+        Example:
+            -
+
+        Author(s):
+            -
+        """
         self.name = name
         self.category = category
         self.state = state
@@ -229,3 +252,51 @@ class listItem:
         """
         # self.genre = raw_input ask for the genre
         pass
+
+    def get_tag(self):
+        """
+        Brief:
+            -
+
+        Description:
+            -
+
+        Arguments:
+            -
+
+        Return Value(s):
+            -
+
+        Example:
+            -
+
+        Author(s):
+            -
+        """
+        return self.tag
+
+    def set_tag(self):
+        """
+        Brief:
+            -
+
+        Description:
+            -
+
+        Arguments:
+            -
+
+        Return Value(s):
+            -
+
+        Example:
+            -
+
+        Author(s):
+            -
+        """
+        # self.tag = raw_input ask for the tag
+        pass
+
+    def add_tags(self, new_tag):
+        self.tags
