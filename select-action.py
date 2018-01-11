@@ -1,0 +1,7 @@
+# anime
+
+
+# video games
+
+
+# manga
