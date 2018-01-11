@@ -68,18 +68,18 @@ def select():
 
     # make sure user input is an integer
     if isinstance(category, int):
-        if category == 1
-            self.initial = 'anime'
+        if category == 1:
+            category = 'anime'
         elif category == 2:
-            self.initial = 'video_games'
+            category = 'games'
         elif category == 3:
-            self.initial = 'manga'
+            category = 'manga'
         else:
             print "Please input a valid selection"
     else:
         print "You must enter the number that corresponds with the category"
 
-
+    return category
 
 
 class anime():
