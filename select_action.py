@@ -24,14 +24,6 @@ import select_category
 import list_item
 
 
-bass = work()
-# action = list()
-
-class select():
-    def view(self.initial):
-        if self.initial == 'anime'
-        print action.anime
-
 def select():
     """
     Brief:
