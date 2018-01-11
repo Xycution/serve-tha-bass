@@ -35,6 +35,47 @@ vidgames = [ 1: 'Pokemon', 2: 'XCOM', 3: 'Conflict: Global Terror']
 manga = [ 1: 'Attack on Titan', 2: 'One Piece', 3: 'My Hero Academia']
 
 
+def select_category():
+    """
+    Brief:
+        -
+
+    Description:
+        -
+
+    Arguments:
+        -
+
+    Return Value(s):
+        -
+
+    Example:
+        -
+
+    Author(s):
+        -
+    """
+    print """\n
+    \n
+      -----------          -----------------         ------------
+    -- 1. Anime   --     -- 2. Video Games  --     --  3. Manga  --
+      -----------          -----------------         ------------
+
+    """
+    category = raw_input('Please select a category:\n ').lower()
+
+    if category == 1 or 'anime' or 'Anime':
+        self.initial = 'anime'
+    elif category == 2 or 'Video Games' or 'video games':
+        self.initial = 'video_games'
+    elif category == 3 or 'Manga' or 'manga':
+        self.initial = 'manga'
+    else:
+        print "Please input a valid selection"
+
+
+
+
 class anime():
     """
     Brief:

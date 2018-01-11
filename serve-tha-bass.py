@@ -26,6 +26,25 @@ action = list()
 choice = something.select() ## << This isn't being recognized when running for some reason
 
 class work(object):
+    """
+    Brief:
+        -
+
+    Description:
+        -
+
+    Arguments:
+        -
+
+    Return Value(s):
+        -
+
+    Example:
+        -
+
+    Author(s):
+        -
+    """
     def startup(self): # this is the first thing to show when running
         print """\n
         \n
@@ -94,10 +113,7 @@ def main():
 
     # execute actions
 
-    # ask user what they want to do
-
     # end
-    pass
 
 
 if  __name__ =='__main__':main()
