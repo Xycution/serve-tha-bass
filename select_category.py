@@ -64,16 +64,20 @@ def select_category():
       -----------          -----------------         ------------
 
     """
-    category = raw_input('Please select a category:\n ').lower()
+    category = raw_input('Please select a category number:\n ')
 
-    if category == 1 or 'anime' or 'Anime':
-        self.initial = 'anime'
-    elif category == 2 or 'Video Games' or 'video games':
-        self.initial = 'video_games'
-    elif category == 3 or 'Manga' or 'manga':
-        self.initial = 'manga'
+    # make sure user input is an integer
+    if isinstance(category, int):
+        if category == 1
+            self.initial = 'anime'
+        elif category == 2:
+            self.initial = 'video_games'
+        elif category == 3:
+            self.initial = 'manga'
+        else:
+            print "Please input a valid selection"
     else:
-        print "Please input a valid selection"
+        print "You must enter the number that corresponds with the category"
 
 
 
