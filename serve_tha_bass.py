@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 """
 Brief:
     serve_tha_bass.py - Contains the primary flow of the application execution.
@@ -24,10 +25,10 @@ import select_category
 import list_item
 
 
-action = list()
+#sel_cat = list()
 #choice = something.select() ## << This isn't being recognized when running for some reason
 
-def startup(self): # this is the first thing to show when running
+def startup(): # this is the first thing to show when running
     """
     Brief:
         -
@@ -47,9 +48,11 @@ def startup(self): # this is the first thing to show when running
     Author(s):
         -
     """
-    select_category.select()
+    
+    
+    select_category.list.select()
 
-def choose(self):
+def choose():
     """
     Brief:
         -
@@ -65,11 +68,11 @@ def choose(self):
 
     Example:
         -
-
+    
     Author(s):
         -
     """
-    select_action.select(select_category.select())
+    select_action.select(select_category.list.select())
 
 
 def main():

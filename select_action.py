@@ -24,65 +24,67 @@ import select_category
 import list_item
 
 
-bass = work()
+#bass = work()
 # action = list()
 
 class select():
-    def view(self.initial):
-        if self.initial == 'anime'
-        print action.anime
+   # def view(self.initial):
+    #    if self.initial == 'anime'
+     #   print action.anime
 
-def select(category):
-    """
-    Brief:
+    def select(category):
+        """
+        Brief:
         -
-
-    Description:
+        
+        Description:
         -
-
-    Arguments:
+        
+        Arguments:
         -
-
-    Return Value(s):
+        
+        Return Value(s):
         -
-
-    Example:
+        
+        Example:
         -
-
-    Author(s):
+        
+        Author(s):
         -
-    """
-
-    print """\n
-      -----------       --------      -----------------        ------------       ----------
-    -- 1. View   --  -- 2. Add  --  --  3. Change State  --  --  4. Delete  --  --  5. Quit  --
-      -----------       --------      -----------------        ------------       ----------
-    """
-    action = raw_input('Please select an action number')
-
-    if action == 1:
-        view()
-
-def view(category):
-    """
-    Brief:
-        -
-
-    Description:
-        -
-
-    Arguments:
-        -
-
-    Return Value(s):
-        -
-
-    Example:
-        -
-
-    Author(s):
-        -
-    """
+        """
+        
+        print """\n
+        -----------       --------      -----------------        ------------       ----------
+        -- 1. View   --  -- 2. Add  --  --  3. Change State  --  --  4. Delete  --  --  5. Quit  --
+        -----------       --------      -----------------        ------------       ----------
+        """
+        action = raw_input('Please select an action number')
+        
+        if action == 1:
+            view()
+            
+            def view(category):
+                """
+                Brief:
+                -
+                
+                Description:
+                -
+                
+                Arguments:
+                -
+                
+                Return Value(s):
+                -
+                
+                Example:
+                -
+                
+                Author(s):
+                -
+                """
+                option = select_category.list.select()
+                print select_category.list.anime
 
 
 def add(category):
