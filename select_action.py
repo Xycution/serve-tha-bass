@@ -32,7 +32,7 @@ class select():
         if self.initial == 'anime'
         print action.anime
 
-def select():
+def select(category):
     """
     Brief:
         -
@@ -63,7 +63,7 @@ def select():
     if action == 1:
         view()
 
-def view(list_item):
+def view(category):
     """
     Brief:
         -
@@ -85,7 +85,7 @@ def view(list_item):
     """
 
 
-def add(list_item):
+def add(category):
     """
     Brief:
         -

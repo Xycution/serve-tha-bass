@@ -25,7 +25,7 @@ import list_item
 
 
 action = list()
-choice = something.select() ## << This isn't being recognized when running for some reason
+#choice = something.select() ## << This isn't being recognized when running for some reason
 
 def startup(self): # this is the first thing to show when running
     """
@@ -69,7 +69,7 @@ def choose(self):
     Author(s):
         -
     """
-    select_action.select()
+    select_action.select(select_category.select())
 
 
 def main():
