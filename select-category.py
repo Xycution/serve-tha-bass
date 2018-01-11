@@ -1,8 +1,13 @@
 #import serve-tha-bass
 #import select-action
 
-Class list_item(object):
-    def view(category):
+bass = work()
+action = list()
+
+class select():
+    def view(self.initial):
+        if self.initial == 'anime'
+        print action.anime
         
     
 

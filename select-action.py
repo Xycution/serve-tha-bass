@@ -1,3 +1,5 @@
+
+class list:
 # anime list
 anime = [1: 'Code Geass', 2: 'World Trigger', 3: 'One Piece']
 
