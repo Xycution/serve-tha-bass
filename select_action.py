@@ -1,6 +1,7 @@
 """
 Brief:
-    -
+    select_action.py - Contains the functions necessary to act upon list items
+        in various ways
 
 Description:
     -
@@ -15,12 +16,12 @@ Example:
     -
 
 Author(s):
-    -
+    Mekyle Fernandes, Mykayla Fernandes
 """
 
-import serve-tha-bass
-import select-category
-import list-item
+import serve_tha_bass
+import select_category
+import list_item
 
 
 bass = work()

@@ -1,6 +1,6 @@
 """
 Brief:
-    select-category.py - Contains the class definitions for all the categories
+    select_category.py - Contains the class definitions for all the categories
         and the functions needed to manipulate them.
 
 Description:
@@ -16,12 +16,12 @@ Example:
     -
 
 Author(s):
-    -
+    Mekyle Fernandes, Mykayla Fernandes
 """
 
-import serve-tha-bass
-import select-action
-import list-item
+import serve_tha_bass
+import select_action
+import list_item
 
 
 class list:

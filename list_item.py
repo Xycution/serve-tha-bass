@@ -1,6 +1,6 @@
 """
 Brief:
-    list-item.py - Contains the class definition for listItem
+    list_item.py - Contains the class definition for listItem
 
 Description:
     list item object and its properties
@@ -18,9 +18,9 @@ Author(s):
     Mykayla Fernandes
 """
 
-import serve-tha-bass
-import select-category
-import select-action
+import serve_tha_bass
+import select_category
+import select_action
 
 
 class listItem:

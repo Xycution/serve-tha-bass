@@ -1,6 +1,6 @@
 """
 Brief:
-    serve-tha-bass.py - Contains the primary flow of the application execution.
+    serve_tha_bass.py - Contains the primary flow of the application execution.
 
 Description:
     A command line application to help track video games, anime, and manga
@@ -19,9 +19,9 @@ Author(s):
 """
 
 #!/usr/bin/env python
-import select-action
-import select-category
-import list-item
+import select_action
+import select_category
+import list_item
 
 action = list()
 choice = something.select() ## << This isn't being recognized when running for some reason
@@ -78,16 +78,6 @@ class work(object):
             choice.view()
 
 
-
-
-
-
-workin = work()
-
-
-workin.startup()
-workin.choose()
-
 def main():
     """
     Brief:
@@ -108,6 +98,12 @@ def main():
     Author(s):
         -
     """
+
+    workin = work()
+
+
+    workin.startup()
+    workin.choose()
     # launch application -- startup()
 
     # ask user what they want to do
