@@ -109,7 +109,7 @@ class anime():
     
     
     def view(self):
-        return "viewing the anime class"
+        print "viewing the anime class"
     
     
     def get_func(self, action):
