@@ -28,25 +28,25 @@ import list_item
 
 
 
-# sel_cat = select_category.list.select()
-#choice = something.select() ## << This isn't being recognized when running for some reason
-
-def startup(): # this is the first thing to show when running
+def startup():
     """
     Brief:
         startup() - These are the first things to appear when launching the application
 
     Description:
-        -
+        Asks the user to select a category
 
     Arguments:
         -
 
     Return Value(s):
-        -
+        category string
 
     Example:
-        -
+        startup() --> 'anime'
+    
+    Related:
+        choose()
 
     Author(s):
         Mekyle Fernandes, Mykayla Fernandes
@@ -61,22 +61,25 @@ def startup(): # this is the first thing to show when running
 def choose():
     """
     Brief:
-        -
+        choose() - asks the user to select an action to perform
 
     Description:
-        -
+        Asks the user to select an action to perform
 
     Arguments:
         -
 
     Return Value(s):
-        -
+        action string
 
     Example:
-        -
+        choose() --> 'view'
+    
+    Related:
+        startup()
     
     Author(s):
-        -
+        Mekyle Fernandes, Mykayla Fernandes
     """
     
     action = select_action.select()
@@ -84,6 +87,30 @@ def choose():
 
     
 def execute(category, action):
+    """
+    Brief:
+        execute(category, action) - executes the selected action on
+            the selected category.
+
+    Description:
+        Executes the selected action on the selected category.
+
+    Arguments:
+        category - (Required) The category to perform the action on.
+        action   - (Required) The action to perform on the category
+
+    Return Value(s):
+        True on success, False on failure
+
+    Example:
+        execute(anime, view) --> anime lists
+    
+    Related:
+        -
+
+    Author(s):
+        Mykayla Fernandes
+    """
     # get the category class and call its action function
     # where category().action() is the same as anime().view()
     return select_category.get_class(category).get_func(action)
@@ -92,22 +119,22 @@ def execute(category, action):
 def main():
     """
     Brief:
-        -
+        main() - The main method.
 
     Description:
-        -
+        Executes the serve-tha-bass application.
 
     Arguments:
         -
 
     Return Value(s):
-        -
+        True on success, False on failure
 
     Example:
-        -
+        main() --> application launches
 
     Author(s):
-        -
+        Mykayla Fernandes, Mekyle Fernandes
     """
     # launch application -- startup()
     # ask user what they want to do -- choose()

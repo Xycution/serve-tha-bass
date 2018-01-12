@@ -40,6 +40,9 @@ def select():
 
     Example:
     -
+    
+    Related:
+    -
 
     Author(s):
     Mekyle Fernandes, Mykayla Fernandes
@@ -143,7 +146,7 @@ class manga():
     # add functions here
     
     
-class videoGames():
+class games():
     """
     Brief:
     -
@@ -158,6 +161,9 @@ class videoGames():
     -
     
     Example:
+    -
+    
+    Related:
     -
     
     Author(s):
