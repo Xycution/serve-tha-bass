@@ -118,10 +118,15 @@ class anime():
     def view(self):
         print "viewing the anime class"
     
-    
+    def add(self):
+        print "Please begin adding your desired anime:\n"
+        
     def get_func(self, action):
         if action == 'view':
             return self.view()
+        elif action == 'add':
+            return self.add()
+        
     
 class manga():
     """
