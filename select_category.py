@@ -80,6 +80,10 @@ def select():
 def get_class(category):
     if category == 'anime':
         return anime()
+    elif category == 'games':
+        return games()
+    else:
+        return manga()
 
         
 class anime():
@@ -185,15 +189,15 @@ class games():
     complete = []  # list_item objects in the complete state
     
      # add functions here
-     def __init__(self):
-         pass
-     
-     
-     def view(self):
-         print "viewing the game class"
-         
-         
-     def get_func(self, action):
+    def __init__(self):
+        pass
+    
+    
+    def view(self):
+        print "viewing the game class"
+        
+        
+    def get_func(self, action):
         if action == 'view':
             return self.view()
         
