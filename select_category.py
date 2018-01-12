@@ -4,10 +4,11 @@ Brief:
         and the functions needed to manipulate them.
 
 Description:
-    -
+    Contains the class definitions for all the categories
+        and the functions needed to manipulate them.
 
 Methods:
-    -
+    select(), get_class()
 
 Return Value(s):
     -
@@ -27,22 +28,22 @@ import list_item
 def select():
     """
     Brief:
-    -
+        select() - Asks user to select a category.
 
     Description:
-    -
+        Asks user to select a category.
 
     Arguments:
-    -
+        -
 
     Return Value(s):
-    category on success, False on failure
+        category string on success, False on failure
 
     Example:
-    -
+        select() --> 'anime'
     
     Related:
-    -
+        select_action.select()
 
     Author(s):
     Mekyle Fernandes, Mykayla Fernandes
@@ -78,6 +79,29 @@ def select():
 
     
 def get_class(category):
+    """
+    Brief:
+        get_class(category) - Returns an instance of the category class
+            it was given.
+
+    Description:
+        Returns an instance of the category class it was given.
+
+    Arguments:
+        category - (Required) the category name string
+
+    Return Value(s):
+        category class on success, False on failure
+
+    Example:
+        get_class(anime) --> anime()
+    
+    Related:
+        get_func(action)
+
+    Author(s):
+    Mekyle Fernandes, Mykayla Fernandes
+    """
     if category == 'anime':
         return anime()
 
@@ -85,22 +109,22 @@ def get_class(category):
 class anime():
     """
     Brief:
-    -
+        anime() - The anime class.
     
     Description:
-    -
+        Contains the anime class definition.
     
     Method(s):
-    -
+        view(), get_func()
     
     Return Value(s):
-    -
+        -
     
     Example:
-    -
+        -
     
     Author(s):
-    -
+    Mykayla Fernandes, Mekyle Fernandes
     """
     backlog = []  # list_item objects in the backlog state
     in_progress = []  # list_item objects in the in_progress state
@@ -122,22 +146,25 @@ class anime():
 class manga():
     """
     Brief:
-    -
+        manga() - The manga class.
     
     Description:
-    -
+        Contains the manga class definition.
     
     Method(s):
-    -
+        -
     
     Return Value(s):
-    -
+        -
     
     Example:
-    -
+        -
+    
+    Related:
+        games(), anime()
     
     Author(s):
-    -
+        Mykayla Fernandes
     """
     backlog = []  # list_item objects in the backlog state
     in_progress = []  # list_item objects in the in_progress state
@@ -149,25 +176,25 @@ class manga():
 class games():
     """
     Brief:
-    -
+        games() - The games class.
     
     Description:
-    -
+        Contains the game class definition.
     
     Method(s):
-    -
+        -
     
     Return Value(s):
-    -
+        -
     
     Example:
-    -
+        -
     
     Related:
-    -
+        anime(), manga()
     
     Author(s):
-    -
+        Mykayla Fernandes
     """
     backlog = []  # list_item objects in the backlog state
     in_progress = []  # list_item objects in the in_progress state
