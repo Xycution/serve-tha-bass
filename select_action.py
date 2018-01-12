@@ -24,9 +24,6 @@ import select_category
 import list_item
 
 
-#bass = work()
-#action = select_category.select()
-
             
 def select():
     """
@@ -46,7 +43,7 @@ def select():
     -
 
     Author(s):
-    -
+    Mekyle Fernandes, Mykayla Fernandes
     """
 
     print """\n
@@ -84,7 +81,29 @@ def select():
     else:
         print action + " is an invalid input."
         return False
-            
+
+
+def view(category):
+    """
+    Brief:
+    -
+
+    Description:
+    -
+
+    Arguments:
+    -
+
+    Return Value(s):
+    -
+
+    Example:
+    -
+
+    Author(s):
+    Mekyle Fernandes, Mykayla Fernandes
+    """
+    
             
 def add(category):
     """

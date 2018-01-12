@@ -54,10 +54,11 @@ def startup(): # this is the first thing to show when running
     
     
     category = select_category.select()
-    action = select_action.select()
+    
+    return category
     
 
-def choose(sel_cat):
+def choose():
     """
     Brief:
         -
@@ -77,8 +78,15 @@ def choose(sel_cat):
     Author(s):
         -
     """
-    # select_action.select.select()
+    
+    action = select_action.select()
+    return action
 
+    
+def execute(category, action):
+    # get the category class and call its action function
+    return
+    
 
 def main():
     """
@@ -101,12 +109,9 @@ def main():
         -
     """
     # launch application -- startup()
-    startup()
-
-    # ask user what they want to do
-    # choose(sel_cat)
-
+    # ask user what they want to do -- select_action.select()
     # execute actions
+    execute(startup(), choose())
 
     # end
     sys.exit(0)
