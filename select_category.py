@@ -71,7 +71,7 @@ def select():
         return category
     else:
         print category + " is not a valid input."
-    return
+        return False
         
         
 class anime():

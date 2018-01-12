@@ -25,66 +25,65 @@ import list_item
 
 
 #bass = work()
-# action = select_category.select()
+#action = select_category.select()
 
-class select():
-   # def view(self.initial):
-    #    if self.initial == 'anime'
-     #   print action.anime
-    @classmethod
-    def select(action):
-        """
-        Brief:
-        -
-        
-        Description:
-        -
-        
-        Arguments:
-        -
-        
-        Return Value(s):
-        -
-        
-        Example:
-        -
-        
-        Author(s):
-        -
-        """
-        
-        print """\n
-        -----------       --------      -----------------        ------------       ----------
-        -- 1. View   --  -- 2. Add  --  --  3. Change State  --  --  4. Delete  --  --  5. Quit  --
-        -----------       --------      -----------------        ------------       ----------
-        """
-        action = raw_input('Please select an action number')
-        
-        if action == '1':
-            view(action)
             
-        def view(category):
-            """
-            Brief:
-            -
-            
-            Description:
-            -
-            
-            Arguments:
-            -
-            
-            Return Value(s):
-            -
-            
-            Example:
-            -
-            
-            Author(s):
-            -
-            """
-            
-            print select_category.list.anime
+def select():
+    """
+    Brief:
+    -
+
+    Description:
+    -
+
+    Arguments:
+    -
+
+    Return Value(s):
+    -
+
+    Example:
+    -
+
+    Author(s):
+    -
+    """
+
+    print """\n
+    --------------------------------------------------
+    -- 1. View --  -- 2. Add --  -- 3. Change State --
+
+    -- 4. Delete --  -- 5. Main Menu --  -- 6. Quit --
+    --------------------------------------------------
+    """
+    action = raw_input('Please select an action number:')
+
+    if action == '1':
+        action = 'view'
+        print "You have selected: " + action
+        return action
+    elif action == '2':
+        action = 'add'
+        print "You have selected: " + action
+        return action
+    elif action == '3':
+        action = 'state'
+        print "You have selected: " + action
+        return action
+    elif action == '4':
+        action = 'delete'
+        return action
+    elif action == '5':
+        action = 'menu'
+        print "You have selected: " + action
+        return action
+    elif action == '6':
+        action = 'quit'
+        print "You have selected: " + action
+        return action
+    else:
+        print action + " is an invalid input."
+        return False
             
             
 def add(category):
