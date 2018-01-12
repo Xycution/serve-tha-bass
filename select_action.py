@@ -25,7 +25,7 @@ import list_item
 
 
 #bass = work()
-action = select_category.list.select()
+# action = select_category.select()
 
 class select():
    # def view(self.initial):

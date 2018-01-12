@@ -23,68 +23,56 @@ import serve_tha_bass
 import select_action
 import list_item
 
+    
+def select():
+    """
+    Brief:
+    -
 
-class list:
-    # anime list
-    anime = {1: 'Code Geass', 2: 'World Trigger', 3: 'One Piece'}
-    
-    
-    # video games list
-    vidgames = { 1: 'Pokemon', 2: 'XCOM', 3: 'Conflict: Global Terror'}
-    
-    
-    # manga list
-    manga = { 1: 'Attack on Titan', 2: 'One Piece', 3: 'My Hero Academia'}
-    
-    def __init__(self, select):
-        self.select = select
-        
-    @classmethod    
-    def select(self):
-        """
-        Brief:
-        -
-        
-        Description:
-        -
-        
-        Arguments:
-        -
-        
-        Return Value(s):
-        -
-        
-        Example:
-        -
-        
-        Author(s):
-        -
-        """
-        print """\n
-        \n
-          -----------          -----------------         ------------
-        -- 1. Anime   --     -- 2. Video Games  --     --  3. Manga  --
-          -----------          -----------------         ------------
-        
-        """
-        category = raw_input('Please select a category number:\n ')
-        
-        # make sure user input is an integer << This accepts the input but repeats 4 times
-        # before moving to next function.
-        if isinstance(category, int):
-            if category == 1:
-                category = 'anime'
-            elif category == 2:
-                category = 'games'
-            elif category == 3:
-                category = 'manga'
-            else:
-                print "Please input a valid selection"
-        else:
-            print "You must enter the number that corresponds with the category"
-            
+    Description:
+    -
+
+    Arguments:
+    -
+
+    Return Value(s):
+    category on success, False on failure
+
+    Example:
+    -
+
+    Author(s):
+    Mekyle Fernandes, Mykayla Fernandes
+    """
+
+    print """\n
+    \n
+      -----------          -----------------         ------------
+    -- 1. Anime   --     -- 2. Video Games  --     --  3. Manga  --
+      -----------          -----------------         ------------
+
+    """
+    category = raw_input('Please select a category number:\n')
+    category = int(category)  # convert input from string to an integer
+
+    # make sure user input is an integer << This accepts the input but repeats 1 times
+    # before moving to next function.
+    if category == 1:
+        category = 'anime'
+        print "You have selected: " + category
         return category
-        serve_tha_bass.choose(category)
+    elif category == 2:
+        category = 'games'
+        print "You have selected: video " + category
+        return category
+    elif category == 3:
+        category = 'manga'
+        print "You have selected: " + category
+        return category
+    else:
+        print category + " is not a valid input."
+    return
+        
         
 class anime():
     """
