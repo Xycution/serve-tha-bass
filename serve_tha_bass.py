@@ -86,8 +86,7 @@ def choose():
 def execute(category, action):
     # get the category class and call its action function
     # where category().action() is the same as anime().view()
-    select_category.get_class(category).get_func(action)
-    return
+    return select_category.get_class(category).get_func(action)
     
 
 def main():

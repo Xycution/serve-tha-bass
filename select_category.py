@@ -104,13 +104,17 @@ class anime():
     complete = []  # list_item objects in the complete state
     
     # add functions here
-    def get_func(action):
-        if action == 'view':
-            return view()
+    def __init__(self):
+        pass
     
-    def view():
+    
+    def view(self):
         return "viewing the anime class"
     
+    
+    def get_func(self, action):
+        if action == 'view':
+            return self.view()
     
 class manga():
     """
