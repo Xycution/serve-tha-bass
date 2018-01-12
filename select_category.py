@@ -72,7 +72,12 @@ def select():
     else:
         print category + " is not a valid input."
         return False
-        
+
+    
+def get_class(category):
+    if category == 'anime':
+        return anime()
+
         
 class anime():
     """
@@ -99,6 +104,12 @@ class anime():
     complete = []  # list_item objects in the complete state
     
     # add functions here
+    def get_func(action):
+        if action == 'view':
+            return view()
+    
+    def view():
+        return "viewing the anime class"
     
     
 class manga():
