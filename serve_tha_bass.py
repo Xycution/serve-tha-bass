@@ -8,7 +8,7 @@ Description:
     A command line application to help track video games, anime, and manga
 
 Methods:
-    main()
+    startup(), choose(), execute(), main()
 
 Return Value(s):
     True on Success, False on Failure
@@ -21,7 +21,6 @@ Author(s):
 """
 
 import sys
-
 import select_action
 import select_category
 import list_item
@@ -119,10 +118,11 @@ def execute(category, action):
 def main():
     """
     Brief:
-        main() - The main method.
+        main() - The main method. Executes the serve-tha-bass application.
 
     Description:
-        Executes the serve-tha-bass application.
+        Launches the application, asks the user what they want to do,
+            and executes the corresponding actions.
 
     Arguments:
         -
@@ -136,9 +136,8 @@ def main():
     Author(s):
         Mykayla Fernandes, Mekyle Fernandes
     """
-    # launch application -- startup()
-    # ask user what they want to do -- choose()
-    # execute actions
+    
+    #execute application
     execute(startup(), choose())
 
     # end
