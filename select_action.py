@@ -1,13 +1,14 @@
 """
 Brief:
     select_action.py - Contains the functions necessary to act upon list items
-        in various ways
+        in various ways.
 
 Description:
-    -
+    Contains the functions necessary to act upon list items
+        in various ways.
 
 Methods:
-    -
+    select()
 
 Return Value(s):
     -
@@ -28,19 +29,19 @@ import list_item
 def select():
     """
     Brief:
-    -
+        select() - Asks the user to select an action.
 
     Description:
-    -
+        Asks the user to select an action.
 
     Arguments:
-    -
+        -
 
     Return Value(s):
-    -
+        action string value
 
     Example:
-    -
+        select() --> 'view'
 
     Author(s):
     Mekyle Fernandes, Mykayla Fernandes
@@ -103,6 +104,9 @@ def view(category):
     Author(s):
     Mekyle Fernandes, Mykayla Fernandes
     """
+    # not sure if we need this function yet
+    pass
+    
     
             
 def add(category):
@@ -125,6 +129,8 @@ def add(category):
     Author(s):
         -
     """
+    # not sure if we need this function yet
+    pass
 
 
 
