@@ -62,20 +62,21 @@ class list:
         """
         print """\n
         \n
-        -----------          -----------------         ------------
+          -----------          -----------------         ------------
         -- 1. Anime   --     -- 2. Video Games  --     --  3. Manga  --
-        -----------          -----------------         ------------
+          -----------          -----------------         ------------
         
         """
         category = raw_input('Please select a category number:\n ')
         
-        # make sure user input is an integer
+        # make sure user input is an integer << This accepts the input but repeats 4 times
+        # before moving to next function.
         if isinstance(category, int):
-            if category == '1':
+            if category == 1:
                 category = 'anime'
-            elif category == '2':
+            elif category == 2:
                 category = 'games'
-            elif category == '3':
+            elif category == 3:
                 category = 'manga'
             else:
                 print "Please input a valid selection"
@@ -83,7 +84,7 @@ class list:
             print "You must enter the number that corresponds with the category"
             
         return category
-        
+        serve_tha_bass.choose(category)
         
 class anime():
     """

@@ -25,14 +25,14 @@ import list_item
 
 
 #bass = work()
-# action = list()
+action = select_category.list.select()
 
 class select():
    # def view(self.initial):
     #    if self.initial == 'anime'
      #   print action.anime
-
-    def select(category):
+    @classmethod
+    def select(action):
         """
         Brief:
         -
@@ -60,33 +60,33 @@ class select():
         """
         action = raw_input('Please select an action number')
         
-        if action == 1:
-            view()
+        if action == '1':
+            view(action)
             
-            def view(category):
-                """
-                Brief:
-                -
-                
-                Description:
-                -
-                
-                Arguments:
-                -
-                
-                Return Value(s):
-                -
-                
-                Example:
-                -
-                
-                Author(s):
-                -
-                """
-                option = select_category.list.select()
-                print select_category.list.anime
-
-
+        def view(category):
+            """
+            Brief:
+            -
+            
+            Description:
+            -
+            
+            Arguments:
+            -
+            
+            Return Value(s):
+            -
+            
+            Example:
+            -
+            
+            Author(s):
+            -
+            """
+            
+            print select_category.list.anime
+            
+            
 def add(category):
     """
     Brief:
