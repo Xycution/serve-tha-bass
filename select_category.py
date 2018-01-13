@@ -24,6 +24,7 @@ import serve_tha_bass
 import select_action
 import list_item
 
+
     
 def select():
     """
@@ -140,16 +141,34 @@ class anime():
     
     
     def view(self):
-        print "viewing the anime class"
+        print "viewing the anime class:\n"
     
     def add(self):
         print "Please begin adding your desired anime:\n"
+        
+    def change_state(self):
+        pass
+    
+    def delete(self):
+        pass
+    
+        
         
     def get_func(self, action):
         if action == 'view':
             return self.view()
         elif action == 'add':
             return self.add()
+        elif action == 'state':
+            return self.change_state()
+        elif action == 'delete':
+            return self.delete()
+        elif action == 'menu':
+            return serve_tha_bass.execute(startup(), choose())
+        elif action == 'quit':
+            return sys.exit(0)
+        else:
+            print "Please provide a valid input."        
         
     
 class manga():
