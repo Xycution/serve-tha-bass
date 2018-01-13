@@ -135,6 +135,7 @@ class anime():
     in_progress = []  # list_item objects in the in_progress state
     complete = []  # list_item objects in the complete state
     
+    
     # add functions here
     def __init__(self):
         pass
@@ -142,6 +143,15 @@ class anime():
     
     def view(self):
         print "viewing the anime class:\n"
+        headers = ['Backlog', 'In Progress', 'Complete']
+        data = [headers] + list(zip(backlog, in_progress, complete))
+        
+        for i, d in enumerate(data):
+            line = '|'.join(str(x).ljust(12) for x in d)
+            print(line)
+            if i == 0:
+                print('-' * len(line))
+        
     
     def add(self):
         print "Please begin adding your desired anime:\n"
