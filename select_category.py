@@ -132,6 +132,8 @@ class anime():
     Author(s):
     Mykayla Fernandes, Mekyle Fernandes
     """
+    # should i create a class for each bucket?
+    # should i treat these as objects instead of lists?
     backlog = []  # list_item objects in the backlog state
     in_progress = []  # list_item objects in the in_progress state
     complete = []  # list_item objects in the complete state
