@@ -23,6 +23,7 @@ Author(s):
 import serve_tha_bass
 import select_action
 import list_item
+from list_item import listItem
 
 
     
@@ -144,7 +145,7 @@ class anime():
     def view(self):
         print "viewing the anime class:\n"
         headers = ['Backlog', 'In Progress', 'Complete']
-        data = [headers] + list(zip(backlog, in_progress, complete))
+        data = [headers] + list(zip(self.backlog, self.in_progress, self.complete))
         
         for i, d in enumerate(data):
             line = '|'.join(str(x).ljust(12) for x in d)
@@ -155,6 +156,50 @@ class anime():
     
     def add(self):
         print "Please begin adding your desired anime:\n"
+        name = raw_input("What is the name of the anime?\n")
+        print "Which state is the anime in?\n"
+        print "-------------------------------------------------\n"
+        print "-- 1. Backlog -- 2. In Progress -- 3. Complete --\n"
+        print "-------------------------------------------------\n"
+        state = raw_input("Provide the number that corresponds with the state: \n")
+        if state == '1':
+            state = 'backlog'
+        elif state == '2':
+            state = 'in_progress'
+        elif state == '3':
+            state = 'complete'
+        else:
+            print "Please provide a valid input."
+        genre = raw_input("What genre is this anime?\n")
+        tag = raw_input("Provide a tag for this anime\n")
+        
+        item = listItem(name, 'anime', state, genre, tag)
+        
+        print "you have added: \n"
+        print(item.name)
+        print(item.category)
+        print(item.state)
+        print(item.genre)
+        print(item.tag)
+        
+        if item.state == 'backlog':
+            self.backlog.append(item)
+            print "added to backlog: \n"
+            print self.backlog
+        elif item.state == 'in_progress':
+            self.in_progress.append(item)
+            print "added to in_progress: \n"
+            print self.in_progress
+        else:
+            self.complete.append(item)
+            print "added to complete: \n"
+            print self.complete
+            
+        # return to main menu
+        return serve_tha_bass.execute(serve_tha_bass.startup(), serve_tha_bass.choose())
+        
+        
+        
         
     def change_state(self):
         pass
