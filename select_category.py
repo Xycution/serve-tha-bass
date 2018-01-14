@@ -137,7 +137,7 @@ class anime():
     """
     # should i create a class for each bucket?
     # should i treat these as objects instead of lists?
-    # Make each list a separate text file?
+    
     backlog = []  # list_item objects in the backlog state
     in_progress = []  # list_item objects in the in_progress state
     complete = []  # list_item objects in the complete state
@@ -194,6 +194,7 @@ class anime():
             self.backlog.append(item.name)
             print "added to backlog: \n"
             print self.backlog
+            
         elif item.state == 'in_progress':
             self.in_progress.append(item)
             print "added to in_progress: \n"
