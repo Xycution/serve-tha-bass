@@ -53,16 +53,16 @@ def select():
 
     print """\n
     \n
-      -----------          -----------------         ------------
-    -- 1. Anime   --     -- 2. Video Games  --     --  3. Manga  --
-      -----------          -----------------         ------------
+      -----------          -----------------         ------------         -----------
+    -- 1. Anime   --     -- 2. Video Games  --     --  3. Manga  --     --   4. Exit   --
+      -----------          -----------------         ------------         -----------
 
     """
     category = raw_input('Please select a category number:\n')
     category = int(category)  # convert input from string to an integer
 
-    # make sure user input is an integer << This accepts the input but repeats 1 times
-    # before moving to next function.
+    # make sure user input is an integer
+    
     if category == 1:
         category = 'anime'
         print "You have selected: " + category
@@ -75,7 +75,10 @@ def select():
         category = 'manga'
         print "You have selected: " + category
         return category
-    else:
+    elif category == 4:
+        print "Now Exiting Serve Tha Bass\nThank You! :]"
+        exit()
+    else:    
         print category + " is not a valid input."
         return False
 
@@ -134,6 +137,7 @@ class anime():
     """
     # should i create a class for each bucket?
     # should i treat these as objects instead of lists?
+    # Make each list a separate text file?
     backlog = []  # list_item objects in the backlog state
     in_progress = []  # list_item objects in the in_progress state
     complete = []  # list_item objects in the complete state
@@ -154,6 +158,8 @@ class anime():
             print(line)
             if i == 0:
                 print('-' * len(line))
+                print i, data
+                i = i + 1
         
     
     def add(self):
@@ -185,7 +191,7 @@ class anime():
         print(item.tag)
         
         if item.state == 'backlog':
-            self.backlog.append(item)
+            self.backlog.append(item.name)
             print "added to backlog: \n"
             print self.backlog
         elif item.state == 'in_progress':
