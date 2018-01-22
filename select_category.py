@@ -138,27 +138,33 @@ class anime():
     # should i create a class for each bucket?
     # should i treat these as objects instead of lists?
     
-    backlog = []  # list_item objects in the backlog state
-    in_progress = []  # list_item objects in the in_progress state
-    complete = []  # list_item objects in the complete state
+   # backlog = []  # list_item objects in the backlog state
+   # in_progress = []  # list_item objects in the in_progress state
+   # complete = []  # list_item objects in the complete state
     
     
     # add functions here
     def __init__(self):
-        pass
+        self.backlog = []
+        self.in_progress = []
+        self.complete = []
+        #pass
+    
     
     
     def view(self):
+        
         print "viewing the anime class:\n"
         headers = ['Backlog', 'In Progress', 'Complete']
         data = [headers] + list(zip(self.backlog, self.in_progress, self.complete))
         
         for i, d in enumerate(data):
-            line = '|'.join(str(x).ljust(12) for x in d)
+            line = '| '.join(str(x).ljust(12) for x in d)
             print(line)
             if i == 0:
                 print('-' * len(line))
                 print i, data
+                print self.backlog
                 i = i + 1
         
     
@@ -191,12 +197,12 @@ class anime():
         print(item.tag)
         
         if item.state == 'backlog':
-            self.backlog.append(item.name)
+            self.backlog.append(name)
             print "added to backlog: \n"
             print self.backlog
             
         elif item.state == 'in_progress':
-            self.in_progress.append(item)
+            self.in_progress.append(item.name)
             print "added to in_progress: \n"
             print self.in_progress
         else:
