@@ -24,9 +24,9 @@ import serve_tha_bass
 import select_action
 import list_item
 from list_item import listItem
+import pymongo
 
 
-    
 def select():
     """
     Brief:
@@ -43,7 +43,7 @@ def select():
 
     Example:
         select() --> 'anime'
-    
+
     Related:
         select_action.select()
 
@@ -79,7 +79,7 @@ def select():
         print category + " is not a valid input."
         return False
 
-    
+
 def get_class(category):
     """
     Brief:
@@ -97,7 +97,7 @@ def get_class(category):
 
     Example:
         get_class(anime) --> anime()
-    
+
     Related:
         get_func(action)
 
@@ -111,24 +111,24 @@ def get_class(category):
     else:
         return manga()
 
-        
+
 class anime():
     """
     Brief:
         anime() - The anime class.
-    
+
     Description:
         Contains the anime class definition.
-    
+
     Method(s):
         view(), get_func()
-    
+
     Return Value(s):
         -
-    
+
     Example:
         -
-    
+
     Author(s):
     Mykayla Fernandes, Mekyle Fernandes
     """
@@ -137,25 +137,25 @@ class anime():
     backlog = []  # list_item objects in the backlog state
     in_progress = []  # list_item objects in the in_progress state
     complete = []  # list_item objects in the complete state
-    
-    
+
+
     # add functions here
     def __init__(self):
         pass
-    
-    
+
+
     def view(self):
         print "viewing the anime class:\n"
         headers = ['Backlog', 'In Progress', 'Complete']
         data = [headers] + list(zip(self.backlog, self.in_progress, self.complete))
-        
+
         for i, d in enumerate(data):
             line = '|'.join(str(x).ljust(12) for x in d)
             print(line)
             if i == 0:
                 print('-' * len(line))
-        
-    
+
+
     def add(self):
         print "Please begin adding your desired anime:\n"
         name = raw_input("What is the name of the anime?\n")
@@ -174,16 +174,18 @@ class anime():
             print "Please provide a valid input."
         genre = raw_input("What genre is this anime?\n")
         tag = raw_input("Provide a tag for this anime\n")
-        
+
+        # potential database write
         item = listItem(name, 'anime', state, genre, tag)
-        
+
+        # potential database read
         print "you have added: \n"
         print(item.name)
         print(item.category)
         print(item.state)
         print(item.genre)
         print(item.tag)
-        
+
         if item.state == 'backlog':
             self.backlog.append(item)
             print "added to backlog: \n"
@@ -196,21 +198,21 @@ class anime():
             self.complete.append(item)
             print "added to complete: \n"
             print self.complete
-            
+
         # return to main menu
         return serve_tha_bass.execute(serve_tha_bass.startup(), serve_tha_bass.choose())
-        
-        
-        
-        
+
+
+
+
     def change_state(self):
         pass
-    
+
     def delete(self):
         pass
-    
-        
-        
+
+
+
     def get_func(self, action):
         if action == 'view':
             return self.view()
@@ -225,87 +227,86 @@ class anime():
         elif action == 'quit':
             return sys.exit(0)
         else:
-            print "Please provide a valid input."        
-        
-    
+            print "Please provide a valid input."
+
+
 class manga():
     """
     Brief:
         manga() - The manga class.
-    
+
     Description:
         Contains the manga class definition.
-    
+
     Method(s):
         -
-    
+
     Return Value(s):
         -
-    
+
     Example:
         -
-    
+
     Related:
         games(), anime()
-    
+
     Author(s):
         Mykayla Fernandes
     """
     backlog = []  # list_item objects in the backlog state
     in_progress = []  # list_item objects in the in_progress state
     complete = []  # list_item objects in the complete state
-    
+
     # add functions here
     def __init__(self):
         pass
-    
-    
+
+
     def view(self):
         print "viewing the manga class"
-        
-        
+
+
     def get_func(self, action):
         if action == 'view':
             return self.view()
-            
-    
+
+
 class games():
     """
     Brief:
         games() - The games class.
-    
+
     Description:
         Contains the game class definition.
-    
+
     Method(s):
         -
-    
+
     Return Value(s):
         -
-    
+
     Example:
         -
-    
+
     Related:
         anime(), manga()
-    
+
     Author(s):
         Mykayla Fernandes
     """
     backlog = []  # list_item objects in the backlog state
     in_progress = []  # list_item objects in the in_progress state
     complete = []  # list_item objects in the complete state
-    
+
      # add functions here
     def __init__(self):
         pass
-    
-    
+
+
     def view(self):
         print "viewing the game class"
-        
-        
+
+
     def get_func(self, action):
         if action == 'view':
             return self.view()
-        

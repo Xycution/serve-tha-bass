@@ -21,6 +21,7 @@ Author(s):
 import serve_tha_bass
 import select_category
 import select_action
+import pymongo
 
 
 class listItem:
@@ -72,6 +73,7 @@ class listItem:
         self.state = state
         self.genre = genre
         self.tag = tag
+        # self._id = rand()  # random alphnumeric string generator
 
     def get_name(self):
         """
@@ -300,3 +302,24 @@ class listItem:
 
     def add_tags(self, new_tag):
         self.tags
+
+    def __str__(self):
+        # build up a string to return
+        retstr = " "
+        retstr += "Name: %s\n" % self.name
+        retstr += "Category: %s\n" % self.category
+        retstr += "State: %s\n" % self.state
+        retstr += "Genre: %s\n" % self.genre
+        retstr += "Tag: %s\n" % self.tag
+
+        return retstr
+
+    def to_dict(self):
+        # lookup proper function name
+        # this will represent a mongodb row with all the column names
+        return {"name": self.name,
+                "category": self.category,
+                "state": self.state,
+                "genre": self.genre,
+                "tag": self.tag,
+                "_id": self._id}

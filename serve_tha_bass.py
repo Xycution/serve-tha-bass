@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 
+# free live hosting
+# https://mlab.com/plans/pricing/#plan-type=sandbox
+
+# pymongo tutorial
+# https://api.mongodb.com/python/current/tutorial.html
+
+# mongo gui
+# https://robomongo.org/
+
 """
 Brief:
     serve_tha_bass.py - Contains the primary flow of the application execution.
@@ -24,6 +33,7 @@ import sys
 import select_action
 import select_category
 import list_item
+import pymongo
 
 
 
@@ -43,19 +53,19 @@ def startup():
 
     Example:
         startup() --> 'anime'
-    
+
     Related:
         choose()
 
     Author(s):
         Mekyle Fernandes, Mykayla Fernandes
     """
-    
-    
+
+
     category = select_category.select()
-    
+
     return category
-    
+
 
 def choose():
     """
@@ -73,18 +83,18 @@ def choose():
 
     Example:
         choose() --> 'view'
-    
+
     Related:
         startup()
-    
+
     Author(s):
         Mekyle Fernandes, Mykayla Fernandes
     """
-    
+
     action = select_action.select()
     return action
 
-    
+
 def execute(category, action):
     """
     Brief:
@@ -103,7 +113,7 @@ def execute(category, action):
 
     Example:
         execute(anime, view) --> anime lists
-    
+
     Related:
         -
 
@@ -113,7 +123,7 @@ def execute(category, action):
     # get the category class and call its action function
     # where category().action() is the same as anime().view()
     return select_category.get_class(category).get_func(action)
-    
+
 
 def main():
     """
@@ -136,7 +146,7 @@ def main():
     Author(s):
         Mykayla Fernandes, Mekyle Fernandes
     """
-    
+
     #execute application
     execute(startup(), choose())
 
